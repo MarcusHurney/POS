@@ -1,0 +1,1641 @@
+p,
+h1 {
+  font-family: 'OpenSans', sans-serif;
+}
+
+th {
+  color: #6d6d6d;
+}
+
+td {
+  padding: 10px 0 10px 5px !important;
+  height: 40px;
+  color: #6d6d6d;
+}
+
+.panel-heading {
+  background-color: white !important;
+}
+
+body {
+  background-color: white !important;
+}
+
+body .modal {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  display: block;
+}
+
+/* Reusable classes */
+.marginTop {
+  margin-top: 100px;
+}
+.marginBottom {
+  margin-bottom: 60px;
+}
+.error {
+  color: red;
+}
+
+.primaryGray {
+  color: #6d6d6d;
+}
+
+.secondaryGray {
+  color: #f2f2f2;
+}
+
+.secondaryBlue {
+  color: #228aeb;
+}
+
+.lightOrange {
+  color: #ff9885;
+}
+
+.title {
+  font-size: 1.3em;
+  color: #6d6d6d;
+  padding-bottom: 30px;
+}
+
+/* Moves the body of app 5 em right, so side navbar will fit */
+.body-content {
+  margin-left: 4.6em;
+  transition: margin-left 0.3s linear;
+  -moz-transition: margin-left 0.3s linear;
+  -webkit-transition: margin-left 0.3s linear;
+}
+/* Side nav bar disappears after app hits xs, media query removes margin-left*/
+@media all and (max-width: 768px) {
+  .body-content {
+    margin-left: 0em;
+  }
+}
+/* ------------ ForgotPassword.jsx --------------------------------------------------------------*/
+.forgotPassword {
+}
+.forgotPassword button {
+  width: 100%;
+}
+/* ------------ RequestReset.jsx --------------------------------------------------------------*/
+.requestReset {
+  margin-top: 150px;
+  color: #284a75;
+}
+
+.requestReset button {
+  background-color: #228aeb;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 0px;
+  margin-top: 25px;
+  width: 100%;
+}
+.requestReset h4 {
+  margin-bottom: 25px;
+}
+#emailSentIcon {
+  color: #449d44;
+}
+
+/* ------------ SingleEmployeeTab.jsx --------------------------------------------------------------*/
+#singleEmployee {
+  border: 2.5px solid #bcb5b9;
+  border-radius: 5px;
+  width: 90px;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#employeeName {
+  text-align: center;
+  color: #6d6d6d;
+}
+
+#singleEmployee p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+#singleEmployee i {
+  color: #228aeb;
+  margin-top: 15px;
+}
+#singleEmployee i:hover {
+  color: #1ebea5;
+}
+/* ------------ ActiveEmployeeThumbnail.jsx --------------------------------------------------------------*/
+.activeEmployee {
+  padding-bottom: 13px;
+}
+.activeEmployee span {
+  color: #228aeb;
+}
+.activeEmployee p {
+  color: #6d6d6d;
+}
+.activeHead {
+  padding-bottom: 0;
+}
+#logoutEmployeeBtn {
+  background-color: #228aeb;
+  border-color: #228aeb;
+  color: white;
+  border-radius: 2px;
+  width: 100%;
+}
+#activeInfo {
+  padding-top: 0;
+}
+
+/* ------------ EditEmployeeForm.jsx --------------------------------------------------------------*/
+#editEmployeeForm input {
+  box-shadow: none;
+}
+
+#editEmployeeForm h2 {
+  margin-bottom: 35px;
+}
+
+#editEmployeeForm label {
+  text-align: left;
+  color: #228aeb;
+  margin-bottom: 15px;
+}
+
+#submitEmployeeEdits {
+  margin-top: 20px;
+  height: 40px;
+  background-color: #228aeb;
+  border-color: #228aeb;
+  border-radius: 2px;
+  width: 100%;
+}
+
+#cancelEmployeeEdits {
+  background-color: #db4437;
+  height: 40px;
+  border-radius: 2px;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+/* ------------ EmployeeSalesData.jsx --------------------------------------------------------------*/
+#employeeRevenue {
+  border: 2px solid #284a75;
+  min-height: 250px;
+  width: auto;
+  margin-top: 1em;
+  border-radius: 5px;
+  margin-right: 3em;
+}
+
+#employeeRevenue i {
+  color: #449d44;
+}
+
+/* ------------ EmployeeProfileContainer.jsx --------------------------------------------------------------*/
+#employeeProContainer {
+  margin-top: 75px;
+}
+
+#employeeProContainer input {
+  box-shadow: none;
+}
+
+#employeeProfilePage {
+  border: 3px solid #f2f2f2;
+  border-radius: 5px;
+  height: auto;
+  width: 700px;
+  padding: 30px;
+}
+
+@media all and (max-width: 991px) {
+  #employeeProfilePage {
+    width: auto;
+  }
+}
+
+#employeeTitle {
+  font-size: 2em;
+  font-weight: 400;
+  color: #6d6d6d;
+}
+
+#employeeSubTitle {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #ff9885;
+}
+
+.employeeIcon {
+  font-size: 10em !important;
+  padding-left: 10px;
+}
+
+#editEmployee {
+  padding-top: 35px;
+  font-size: 1.5em;
+  color: #1ebea5;
+}
+
+#editEmployeeIcon:hover {
+  cursor: pointer;
+  color: #228aeb;
+}
+
+#employeeInfo {
+  padding-top: 50px;
+}
+
+#employeeInfo p {
+  margin-top: 5px;
+  color: #6d6d6d;
+  font-size: 1.4em;
+}
+
+#employeeInfo span {
+  color: #228aeb;
+  font-size: 0.8em !important;
+}
+
+#forgotEmployeePass {
+  margin-top: 20px;
+  color: #6d6d6d;
+}
+
+#forgotEmployeePass:hover {
+  color: #228aeb;
+  cursor: pointer;
+}
+
+#employeeLogin {
+  padding-top: 40px;
+}
+
+#employeeLogin input {
+  margin-top: 5px;
+  height: 35px;
+}
+
+#employeeLogin label {
+  color: #228aeb;
+  text-align: center;
+}
+
+#loginEmployeeBtn {
+  margin-top: 20px;
+  background-color: #228aeb;
+  border-color: #228aeb;
+  color: white;
+  height: 35px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+#employeeProfilePage #backArrow {
+  color: #1ebea5;
+}
+#employeeProfilePage #backArrow:hover {
+  cursor: pointer;
+}
+
+/*#employeeProfile {
+  border: 2px solid #284A75;
+  min-height: 500px;
+  width: auto;
+}
+  #employeeProfile label {
+    padding-top: 15px;
+    color: #337ab7;
+  }
+  #employeeProfile h4 {
+    padding-top: 12px;
+  }
+  #employeeProfile h1 {
+    color: #284A75;
+  }
+  #employeeProfile i {
+    padding-top: 0.3em;
+    padding-bottom: 0.2em;
+    color: #284A75;
+  }
+  #employeeProfile button {
+    height: 3em;
+    width: 100%;
+    background-color: #284A75;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #employeeProfile button:hover {
+    background-color: #1EBEA5;
+  }
+
+
+  @media all and (max-width: 768px) {
+      #employeeProfile button {
+        width: 75%;
+        margin-bottom: 25px;
+      }
+  }
+#employeeLogin h5 {
+  color: red;
+}*/
+/* ------------ SaleProfile.jsx --------------------------------------------------------------*/
+#saleProfile {
+  margin-top: 75px;
+}
+#saleHeader {
+  text-align: center;
+}
+
+#saleItems {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+#saleTotal {
+  margin-left: 15px;
+}
+
+#saleCheckMark {
+  color: #449d44;
+  float: right;
+}
+
+#receiptBorder {
+  position: relative;
+  padding: 8px 8px 32px 8px;
+  background: #faebd7;
+}
+#receiptBorder:after {
+  background: linear-gradient(-45deg, #ffffff 16px, transparent 0),
+    linear-gradient(45deg, #ffffff 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+
+@media all and (max-width: 768px) {
+  #saleProfile {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* ------------ SoldItemThumbnail.jsx --------------------------------------------------------------*/
+
+#soldItemThumbnail {
+  /*This ain't coverin the whole background charles*/
+  background: #faebd7 !important;
+  border: 2px solid #284a75;
+}
+
+/* ------------ SalesHistoryRow.jsx --------------------------------------------------------------*/
+.salesHistoryRow i {
+  color: #228aeb;
+}
+
+.salesHistoryRow i:hover {
+  cursor: pointer;
+  color: #1ebea5;
+}
+
+/* ------------ SalesHistoryContainer.jsx --------------------------------------------------------------*/
+#salesHistoryContainer {
+  margin-top: 75px;
+}
+
+#salesHistoryContainer .panel-heading {
+  background-color: white !important;
+  padding-bottom: 15px;
+}
+
+#salesHistoryContainer p {
+  font-size: 1.3em;
+}
+
+#historyHead {
+  font-size: 2em !important;
+  font-weight: 400;
+}
+
+#historySubHead {
+  margin-bottom: 15px;
+}
+.combobox-wrapper select {
+  width: 200px;
+  height: 30px !important;
+}
+.dateColumn {
+  width: 200px;
+  margin-right: 100px;
+}
+
+#salesHistoryContainer #loadingSpinner {
+  margin-left: 45%;
+}
+/* ------------ SalesSearchForm.jsx ----------------------------------------------------------------*/
+
+#salesByDateForm .form-group {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+#salesByDateForm select {
+  height: 25px;
+}
+#historyBtns {
+  padding-top: 75px;
+  padding-left: 50px;
+}
+
+#searchSalesBtn {
+  background-color: #2c87f3;
+  border-color: #2c87f3;
+  height: 50px;
+  border-radius: 2px;
+  width: 200px;
+}
+#refreshSalesBtn {
+  padding-left: 200px;
+  padding-top: 6px;
+  color: #2c87f3;
+}
+#refreshSalesBtn:hover {
+  cursor: pointer;
+}
+/* ------------ Signout.jsx ----------------------------------------------------------------*/
+#signOutPage {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: url(../images/goodbye-bottle.jpg) center center no-repeat;
+  background-size: cover;
+}
+#signoutMessage h1 {
+  position: relative;
+  right: 300px;
+  color: #284a75;
+}
+#signoutBacsiLogo {
+  margin-top: 25em;
+}
+/* ------------ PlusMinusBtns.jsx ----------------------------------------------------------------*/
+
+#plusMinusTD {
+  width: 115px;
+  padding-top: 11px;
+}
+
+#plusMinusBtns button {
+  border: none;
+}
+
+#plusBtn {
+  border: none;
+  color: #b8b5b5;
+  margin-right: 0.5em;
+}
+
+#plusBtn:hover {
+  border: none;
+  background-color: white;
+}
+
+#minusBtn {
+  border: none;
+  color: #b8b5b5;
+}
+
+#minusBtn:hover {
+  border: none;
+  background-color: white;
+}
+
+#plusBtn i:hover {
+  color: #449d44;
+}
+
+#minusBtn i:hover {
+  background-color: white;
+  color: #db4437;
+}
+
+/* ------------ LandingPage.jsx ----------------------------------------------------------------*/
+
+/*-- Features ------*/
+.features h1 {
+  font-size: 3em !important;
+  font-family: 'Audiowide', cursive;
+  color: #228aeb;
+  margin-bottom: 0.5em;
+}
+
+.features .col-lg-6 p {
+  font-family: 'Lato';
+  font-size: 1.2em;
+  line-height: 3.8rem;
+  color: #6d6d6d;
+  margin-bottom: 1.1em;
+}
+
+.features img {
+  padding: 125px 0 35px;
+}
+
+.features i {
+  margin-top: 20px;
+}
+.features {
+  background-color: white;
+  text-align: center;
+  color: #6d6d6d;
+  padding: 90px 0 90px;
+}
+
+.features .fa-arrow-right {
+  padding-right: 20px;
+}
+
+.features .fa-arrow-left {
+  padding-left: 20px;
+}
+
+#demoBtn {
+  color: white;
+  background-color: #ff9885;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  font-size: 1.3em;
+  transition: all 0.2s ease-in-out;
+}
+
+#button_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+#button_container .fa {
+  color: #6d6d6d;
+  transition: all 0.2s ease-in-out;
+}
+
+#button_container:hover .fa {
+  color: #ff9885 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+#button_container:hover #demoBtn {
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  border: 2px solid #ff9885;
+  color: #ff9885;
+  width: 200px;
+}
+
+#demoBtn:focus {
+  outline: 0;
+}
+
+.features-content p {
+  font-family: 'Lato';
+  line-height: 1.8em;
+  margin-bottom: 1.5em;
+}
+
+.lightPurple {
+  color: #e2a5df;
+}
+
+.turqoise {
+  color: #1ebea5;
+}
+
+.citrusGreen {
+  color: #ffb6c1;
+}
+
+.indianRed {
+  color: #cd5c5c;
+}
+
+.limeGreen {
+  color: #449d44;
+}
+.lightPink {
+  color: #ffb6c1;
+}
+.peach {
+  color: #ffdab9;
+}
+
+.slateGray {
+  color: #778899;
+}
+
+/* ------------ AddProductBtn.jsx ----------------------------------------------------------------*/
+#addProductBtn {
+  color: #1ebea5;
+  background-color: white;
+  border: none;
+}
+
+#addProductBtn:hover {
+  border-color: white;
+  background-color: white !important;
+}
+
+/* ------------ StoreSettings.jsx ----------------------------------------------------------------*/
+#userProfile label {
+  color: #2c87f3;
+}
+/* ------------ TaxThumbnail.jsx ----------------------------------------------------------------*/
+#setTaxBtn {
+  background-color: #2c87f3;
+  border-color: #2c87f3;
+  border-radius: 2px;
+  width: 100%;
+}
+/* ------------ AddEmployeeThumbnail.jsx ----------------------------------------------------------------*/
+
+#addEmployeeBtn {
+  width: 100%;
+  background-color: #2c87f3;
+  border-color: #2c87f3;
+  border-radius: 2px;
+}
+
+/* ------------ StoreFrontContainer.jsx ----------------------------------------------------------------*/
+.inventory {
+  padding-top: 8%;
+}
+
+@media (max-width: 768px) {
+  .inventory {
+    padding-top: 15%;
+  }
+}
+
+#searchTitle {
+  padding-left: 10px;
+  font-size: 1.5em;
+  color: #727272;
+}
+
+@media (max-width: 991px) {
+  #searchTitle {
+    text-align: center;
+  }
+}
+
+.addPadding {
+  padding: 10px 10px 10px 10px;
+}
+
+#topProductsMessage {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #6d6d6d;
+}
+
+#spinner {
+  text-align: center;
+}
+
+/* ------------ loadingSpinner.jsx ----------------------------------------------------------------*/
+#loadingSpinner {
+  margin-top: 50px;
+  color: #2c87f3;
+}
+
+/* ------------ LoadProductsBtn.jsx ----------------------------------------------------------------*/
+#loadProductsBtn {
+  background-color: #2c87f3;
+  border-radius: 2px;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 200px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ------------ Navbar.jsx ----------------------------------------------------------------*/
+.navbar-header:hover {
+  cursor: pointer;
+}
+.logo-anchor {
+  text-decoration: none !important;
+}
+
+.logo-text {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.2em;
+  color: #228aeb !important;
+  position: relative;
+  top: 20px;
+  margin-left: 10px;
+}
+.navbar-brand {
+  height: 50px;
+  width: 35px;
+  padding: 5px 0 5px;
+}
+@media all and (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 1em;
+  }
+}
+
+/* ------------ PreAuthNavTabs.jsx --------------------------------------------------------------*/
+#preAuthNavTabs .navbar-form {
+  padding-top: 3px;
+}
+#preAuthNavTabs li {
+  padding-top: 3px;
+  font-size: 1.1em;
+}
+#preAuthNavTabs li:first-child {
+  padding-left: 20px;
+}
+
+#preAuthNavTabs li a {
+  top: 3px;
+  color: #2c87f3;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+
+#preAuthNavTabs li a:hover {
+  color: #284a75;
+  transition: all 0.2s ease-in-out;
+}
+
+#forgotPassword {
+  font-size: 0.6em;
+  color: #db4437;
+}
+
+/* ------------ PostAuthNavTabs.jsx --------------------------------------------------------------*/
+#postAuthNavTabs i {
+  margin-right: 0.5em;
+}
+
+#postAuthNavTabs i:hover {
+  color: #1ebea5;
+}
+
+#postAuthNavTabs a:hover {
+  color: #1ebea5 !important;
+}
+
+#signOutTab {
+  color: #bcb5b9;
+  font-size: 1.3em;
+  margin-top: 0.3em;
+}
+
+/* The visible user-profile tab and singout button's text will be green during hover */
+#signOutTab:hover {
+  color: #1ebea5 !important;
+}
+
+#userTab,
+#userIcon {
+  font-size: 1.3em;
+  color: #bcb5b9;
+}
+
+#userTab:hover {
+  color: #1ebea5 !important;
+}
+/* When the navbar is minized, removes user-profile tab's green hover property */
+@media all and (max-width: 768px) {
+  #userTab:hover {
+    color: #284a75 !important;
+  }
+}
+
+/* ------------ UndoSaleBtn.jsx ----------------------------------------------------------------*/
+#undoSale {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+#undoSaleBtn {
+  font-size: 1.2em;
+  color: #6d6d6d;
+  padding-left: 10px;
+}
+
+#undoSaleBtn:hover {
+  color: #db4437;
+}
+
+#undoSaleBtn:hover {
+  cursor: pointer;
+}
+
+/* ------------ CartProductRow.jsx ----------------------------------------------------------------*/
+
+.cartRow {
+  font-family: 'OpenSans', sans-serif;
+  color: #6d6d6d;
+}
+
+.rowPadding {
+  padding-top: 16px !important;
+}
+
+.fa-check {
+  color: #449d44;
+}
+
+.productQuantity {
+  font-size: 1.3em;
+  margin-left: 5px;
+}
+
+#cartDelete {
+  color: #db4437;
+  padding-top: 10px;
+}
+
+#cartDelete:hover {
+  cursor: pointer;
+}
+
+/* ------------ DeleteBtn.jsx ----------------------------------------------------------------*/
+
+#deleteBtn {
+  color: #db4437;
+  padding-bottom: 0.7em;
+}
+
+#deleteBtn:hover {
+  cursor: pointer;
+}
+
+/* ------------ Home.jsx ----------------------------------------------------------------*/
+
+.home {
+  padding: 140px 0 220px 0;
+  background: url(../../css/home.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #c9c9c9;
+}
+
+.home_content {
+  padding-top: 10%;
+  padding-left: 45%;
+  text-align: center;
+  color: #284a75;
+}
+
+.home_content ul {
+  list-style-type: none;
+}
+
+#homeBacsiLogo {
+  padding-top: 10%;
+}
+
+/* ------------ Navbar.jsx --------------------------------------------------------------*/
+
+.navbar {
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #eaeaea;
+  font-family: 'OpenSans', sans-serif;
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    font-size: 1em;
+  }
+}
+
+/* ------------ PostAuthSideNavbar.jsx --------------------------------------------------------------*/
+
+.side-nav-wrapper {
+  position: absolute;
+  top: 3.6em;
+  left: 0em;
+  width: 4.7em;
+  height: 100%;
+  background-color: #efefef;
+  color: #696969;
+  transition: left 0.3s linear;
+  -moz-transition: left 0.3s linear;
+  -webkit-transition: left 0.3s linear;
+}
+
+.side-nav-wrapper ul {
+  width: 11em;
+  list-style: none;
+  margin-top: 2em;
+  margin-left: 1em;
+  padding: 0em;
+}
+
+.side-nav-wrapper ul li {
+  margin-top: 3em;
+}
+
+.side-nav-wrapper ul li a .active {
+  color: #1ebea5;
+}
+
+.side-nav-wrapper ul li a:active,
+.side-nav-wrapper ul li a:hover {
+  color: #1ebea5;
+}
+
+.homeLabel {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0em !important;
+  margin-left: -0.2em !important;
+}
+
+#homeIcon {
+  color: #e2a5df;
+}
+
+.sellLabel {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0em !important;
+  margin-left: 0.5em !important;
+}
+
+#sellIcon {
+  color: #ff9885;
+}
+
+.inventoryLabel {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0em !important;
+  margin-left: -0.6em !important;
+}
+
+#inventoryIcon {
+  color: #76deca;
+}
+
+.reportingLabel {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0em !important;
+  margin-left: -0.8em !important;
+}
+
+#reportingIcon {
+  color: #f8a443;
+}
+
+.salesLabel {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0em !important;
+  margin-left: -1em !important;
+}
+
+#salesIcon {
+  color: #b5e892;
+}
+
+/* ------------ Login.jsx --------------------------------------------------------------*/
+
+.loginNav .navbar-right li {
+  padding: 10px 5px;
+  margin-bottom: 0;
+}
+
+/* ------------ Tour.jsx --------------------------------------------------------------*/
+
+.tour {
+  padding-top: 7%;
+}
+
+.tour ul {
+  text-align: center;
+}
+
+/* ------------ LoginFormContainer.jsx --------------------------------------------------------------*/
+#loginBtn {
+  color: #2c87f3;
+  border-color: #2c87f3;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+#loginBtn:hover {
+  background-color: #2c87f3;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+#loginEmail {
+  margin-right: 10px;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#loginEmail:hover {
+  border: 1px solid #2c87f3;
+  transition: all 0.2s ease-in-out;
+}
+
+#loginPassword {
+  margin-right: 10px;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#loginPassword:hover {
+  border: 1px solid #2c87f3;
+  transition: all 0.2s ease-in-out;
+}
+/* ------------ Signup.jsx --------------------------------------------------------------*/
+
+#adminCheck {
+  margin-left: 15px;
+}
+
+#errorAlert {
+  margin-bottom: 25px;
+  color: red;
+}
+
+.text-help {
+  color: red;
+}
+
+#signupBtn {
+  width: 100%;
+  background-color: #228aeb;
+  border-color: #228aeb;
+  height: 50px;
+  border-radius: 0px;
+}
+
+#signupPage {
+  margin-top: 100px;
+  color: #284a75;
+}
+
+#signupPage h4 {
+  text-align: center;
+}
+
+/* ------------ Product-Search.jsx --------------------------------------------------------------*/
+#productSearch {
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+#productSearch i {
+  color: #6d6d6d;
+}
+
+#productSearch input {
+  border-width: 2px;
+  border-color: #a9a9a9;
+  border-radius: 5px;
+  height: 32px !important;
+  box-shadow: none;
+}
+
+#productSearch .input-group-addon {
+  padding: 0 10px;
+  background-color: white;
+  border: none;
+}
+
+#productSearch input::-webkit-input-placeholder {
+  color: #bcb5b9 !important;
+}
+
+#productSearch input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #bcb5b9 !important;
+}
+
+#productSearch input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #bcb5b9 !important;
+}
+
+#productSearch input:-ms-input-placeholder {
+  color: #bcb5b9 !important;
+}
+
+/* ------------ UserDashboardContainer.jsx --------------------------------------------------------------*/
+
+#userProfile {
+  margin-top: 100px;
+}
+
+#userProfile h3 {
+  color: #284a75;
+}
+
+#userProfile input {
+  box-shadow: none;
+}
+
+#profileTitle {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#storeTitle {
+  padding-left: 12px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+/* ------------ ProductFilter.jsx --------------------------------------------------------------*/
+#filterTitle {
+  color: #696969;
+  font-size: 1.2em !important;
+}
+.pharmaFilter {
+  color: #34caaf;
+}
+.herbalsFilter {
+  color: #ff7a62;
+}
+.consumerFilter {
+  color: #a6e47c;
+}
+.otcFilter {
+  color: #de8eda;
+}
+
+.xsPadRight {
+  padding-right: 6px;
+}
+
+#filterOptions ul {
+  margin-bottom: 30px;
+  color: #6d6d6d;
+  text-align: center;
+}
+
+#filterOptions li {
+  padding-right: 20px;
+  display: inline;
+  font-size: 1.1em;
+}
+
+#filterOptions li:hover {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #filterOptions ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+}
+
+.activeBlue {
+  color: #337ab7 !important;
+}
+
+/* ------------ Single-Product.jsx --------------------------------------------------------------*/
+
+#singleProduct {
+  border: 2.5px solid #bcb5b9;
+  border-radius: 5px;
+  width: 100px;
+  height: 140px;
+  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  #singleProduct {
+    margin-left: 23px;
+  }
+}
+
+#pricetag i:hover {
+  cursor: pointer;
+  color: #2c87f3;
+}
+
+#productName {
+  padding-top: 15px;
+  text-align: center;
+  color: #6d6d6d;
+}
+
+#examineIcon i {
+  padding: 5px 0 0 5px;
+  color: #6d6d6d;
+}
+
+#examineIcon i:hover {
+  color: #2c87f3;
+}
+
+/* ------------ ProductProfile.jsx --------------------------------------------------------------*/
+
+#productProfile {
+  margin-top: 150px;
+}
+
+#productBackArrow i {
+  color: #57c082;
+}
+
+#productBackArrow i:hover {
+  cursor: pointer;
+}
+
+#productEditIcon i {
+  float: right;
+  color: #2c87f3;
+}
+
+#productEditIcon i:hover {
+  cursor: pointer;
+}
+
+/* ------------ CartHeader.jsx --------------------------------------------------------------*/
+#cartHeaderDiv h5 {
+  text-align: center;
+  color: #228aeb;
+}
+
+#cartHeaderDiv p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.cartHeaderActive i {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #228aeb;
+}
+
+.cartHeaderReceipt i {
+  color: #228aeb;
+}
+
+.cartHeaderSale i {
+  color: #228aeb;
+}
+
+/* ------------ CartContainer.jsx --------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+  #checkoutContainer {
+    margin-top: 20px;
+  }
+}
+
+#checkoutTitle {
+  float: left;
+  font-size: 1.5em;
+  color: #727272;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+#itemCount {
+  font-style: italic;
+  padding-top: 10px;
+  color: #bebebe;
+}
+
+#discardDiv {
+  padding-top: 10px;
+  text-align: right;
+}
+#discardSale {
+  color: #b5b5b5;
+  font-size: 1.1em;
+}
+#clearCartBtn {
+  margin-right: 10px;
+  color: #b5b5b5;
+  font-size: 1.5em;
+}
+#clearCartBtn:hover {
+  cursor: pointer;
+  color: #db4437;
+}
+
+.checkout {
+  margin-top: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cecece;
+  border-radius: 5px;
+}
+
+.cartTableContainer {
+  height: 285px;
+  overflow-y: scroll;
+}
+
+.checkOutBtn {
+  width: 100%;
+  background-color: #228aeb;
+  border-color: #228aeb;
+  height: 65px;
+}
+
+.checkOutBtn:hover {
+  background-color: #00b359;
+  border-color: #00b359;
+}
+
+#payBtnText {
+  float: left;
+  font-size: 1.5em;
+}
+
+#payBtnTotal {
+  float: right;
+  font-size: 1.7em;
+}
+
+#checkoutPanel {
+  margin-bottom: 0;
+}
+
+/* -- CartTotalsTable.jsx ------------------------------------------------------*/
+
+#cartTotals {
+  height: 217px;
+}
+
+.checkout .panel-footer {
+  background-color: white !important;
+}
+
+.cartTableContainer td {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.totalsData {
+  font-size: 1.3em;
+  color: #6d6d6d;
+}
+
+.actualTotal {
+  font-size: 2.3em;
+  padding-top: 30px;
+  color: #6d6d6d;
+}
+
+#discount {
+  color: #228aeb;
+}
+
+.totalDiv {
+  border-top: 1px solid #cecece;
+}
+
+#hideReceiptIcon {
+  color: white;
+}
+
+#cartTotalsTable {
+  margin-bottom: 5px;
+}
+
+/* ------------ Receipt.jsx --------------------------------------------------------------*/
+
+.receipt {
+  margin-top: 25px;
+}
+
+.receipt .saleItems td {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.receipt button {
+  height: 50px;
+  width: 100%;
+}
+
+.receipt .panel-heading h5 {
+  color: #284a75;
+}
+
+.receipt .saleItems .fa {
+  color: #449d44;
+}
+
+/* ------------ AllProducts.jsx --------------------------------------------------------------*/
+#allProductsFooter {
+  text-align: center;
+  padding: 0;
+  background-color: white;
+}
+.allProductsShown {
+  margin-top: 75px;
+}
+
+.allProductsShown #productSearch .input-group-addon {
+  background-color: white;
+}
+
+.allProductsShown #productSearch input {
+  height: 50px !important;
+}
+
+@media (max-width: 1060px) {
+  .allProductsShown #productSearch.input-group {
+    margin-right: 25px;
+  }
+}
+
+.allProductsShown .panel-heading {
+  background-color: #f8f8f8;
+  padding: 0;
+}
+
+#allProductsHead {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#allProductsSubHead {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+#addProductTitle {
+  font-size: 1.6em;
+  margin-right: 50px;
+}
+
+.allProductsShown #addProductBtn {
+  padding-top: 45px;
+}
+
+@media (max-width: 1060px) {
+  .allProductsShown #addProductBtn {
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+.allProductsShown #addProductBtn i {
+  padding-left: 25px;
+}
+
+.allProductsShown input {
+  box-shadow: none;
+}
+.allProductsShown .input-group-addon {
+  background-color: white;
+  font-size: 2em !important;
+}
+.allProductsShown .panel-heading div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#editProductIcon {
+  color: #2c87f3;
+}
+
+#editProductIcon:hover {
+  cursor: pointer;
+}
+
+/* ------------- SaleDetailsContainer ------------------------------------ */
+#deleteSaleBtn {
+  margin-top: 2.5em;
+  width: 100%;
+}
+
+/* ------------ ManageProductForm.jsx --------------------------------------------------------------*/
+
+#manageProductForm #deleteProductBtn {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+#manageTitle {
+  margin-bottom: 60px;
+}
+
+#manageProductForm label {
+  color: #228aeb;
+  padding-bottom: 10px;
+}
+
+#manageProductForm h3 {
+  padding-bottom: 25px;
+}
+
+#manageProductFields input {
+  box-shadow: none;
+}
+
+#saveProductBtn {
+  margin-top: 50px;
+  height: 50px;
+  background-color: #228aeb;
+  border-color: #228aeb;
+  border-radius: 2px;
+  width: 100%;
+}
+
+#cancelProductBtn {
+  background-color: #db4437;
+  height: 50px;
+  padding-top: 12px;
+  border-radius: 2px;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+
+#cancelProductBtn:hover {
+  background-color: #db4437;
+}
+
+#manageBackArrow i {
+  color: #57c082;
+}
+
+#manageBackArrow i:hover {
+  cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  #manageProductForm {
+    margin-top: 8em;
+  }
+  #manageProductForm form {
+    margin-top: 0px;
+  }
+}
+
+/* ------------ Reporting.jsx --------------------------------------------------------------*/
+
+/* ------------ RevenueThumbnail.jsx --------------------------------------------------------------*/
+
+.revenueThumbnail {
+  margin-top: 125px;
+}
+
+.chartTitle {
+  color: #727272;
+}
+
+/* ------------ LoginFormContainer.jsx --------------------------------------------------------------*/
+
+#loginError {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+#loginError a {
+  padding-right: 10px;
+}
